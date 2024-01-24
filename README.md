@@ -20,6 +20,6 @@ For this reason, the Double Ratchet algorithm was initially named after this ani
 [wiki-axolotl]: https://en.wikipedia.org/wiki/Axolotl
 [wiki-xochimilco]: https://en.wikipedia.org/wiki/Lake_Xochimilco
 
-## Differences From Xochimilco
+## Differences From Base Xochimilco Library
 - Corrects some typos in the test code
 - Uses XChaCha20-Poly1305 instead of AES256-CBC
