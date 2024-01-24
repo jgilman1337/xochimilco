@@ -19,3 +19,7 @@ For this reason, the Double Ratchet algorithm was initially named after this ani
 [signal-double-ratchet]: https://signal.org/docs/specifications/doubleratchet/
 [wiki-axolotl]: https://en.wikipedia.org/wiki/Axolotl
 [wiki-xochimilco]: https://en.wikipedia.org/wiki/Lake_Xochimilco
+
+## Differences From Xochimilco
+- Corrects some typos in the test code
+- Uses XChaCha20-Poly1305 instead of AES256-CBC
