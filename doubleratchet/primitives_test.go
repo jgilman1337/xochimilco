@@ -8,6 +8,7 @@ import (
 	"bytes"
 	"crypto/rand"
 	"crypto/sha256"
+	"fmt"
 	"testing"
 )
 
@@ -114,16 +115,21 @@ func TestEncryptionDecryption(t *testing.T) {
 	}
 
 	plaintextIn := []byte("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+	fmt.Printf("plain_i %v\n", plaintextIn)
 
 	ciphertext, err := encrypt(msgKey, plaintextIn, associatedData)
 	if err != nil {
 		t.Fatal(err)
 	}
 
+	fmt.Printf("ciph : %v\n", ciphertext)
+
 	plaintextOut, err := decrypt(msgKey, ciphertext, associatedData)
 	if err != nil {
 		t.Fatal(err)
 	}
+
+	fmt.Printf("plain_o: %v\n", plaintextOut)
 
 	if !bytes.Equal(plaintextIn, plaintextOut) {
 		t.Fatalf("plaintext differs, %v %v", plaintextIn, plaintextOut)
