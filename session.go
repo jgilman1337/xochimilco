@@ -9,8 +9,8 @@ import (
 	"crypto/rand"
 	"fmt"
 
-	"github.com/oxzi/xochimilco/doubleratchet"
-	"github.com/oxzi/xochimilco/x3dh"
+	"github.com/jgilman1337/xochimilco/doubleratchet"
+	"github.com/jgilman1337/xochimilco/x3dh"
 )
 
 // Session between two parties to exchange encrypted messages.
