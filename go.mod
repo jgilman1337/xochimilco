@@ -1,4 +1,4 @@
-module github.com/oxzi/xochimilco
+module github.com/jgilman1337/xochimilco
 
 go 1.15
 
